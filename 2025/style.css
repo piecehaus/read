@@ -1,0 +1,136 @@
+        *{
+ margin : 0;
+ padding : 0;
+ box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    overflow-y: hidden;
+}
+
+h1 {
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+li {
+    font-size: 13px;
+    margin-left: 35px;
+}
+
+marquee {
+    font-size: 25px;
+    background-color: royalblue;
+    position: fixed;
+}
+
+/*.
+mark {
+    background-color: transparent;
+    text-decoration: underline dotted;
+    text-decoration-color: tomato;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+*/
+
+mark {
+    background-color: orange;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a.active {
+  background-color: white;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 15px;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+
+.except {
+    position: absolute;
+}
+
+.left {
+    position: absolute;
+    height: 500%;
+    width: 400px;
+    background-color: royalblue;
+    overflow-y: hidden;
+}
+
+.right {
+    position: absolute;
+    height: 500%;
+    width: calc(100% - 400px);
+    margin-left: 400px;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.content {
+    display: absolute;
+    height: 200%;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  /*  overflow-y:auto;*/
+}
+
+.content:target {
+    display: block;
+}
+
+.click:hover {
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width: 700px) {
+
+.left {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background-color: royalblue;
+    overflow-y: scroll;
+}
+
+.right {
+    position: absolute;
+    height: calc(100% - 200px);
+    width: 100%;
+    top: 200px;
+    margin-left: 0px;
+    overflow-y: scroll;
+    background-color: orange;
+
+    .content {
+    display: none;
+}
+
+.content:target {
+    display: block;
+}
+
+
+mark {
+    background-color: white;
+}
+
+}
